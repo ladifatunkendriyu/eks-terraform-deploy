@@ -16,7 +16,6 @@ pipeline {
         stage('Terraform plan') {
             steps {
                 echo 'terraform plan phase'
-                 withCredentials([usernamePassword(credentialsId: 'aws-credentials', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
                 sh 'terraform plan'
             }
         }

@@ -1,3 +1,4 @@
+*/
 terraform {
   backend "s3" {
     bucket = "fusisoft-terraform-backend-bucket"
@@ -6,3 +7,4 @@ terraform {
     dynamodb_table = "terraform-state-locking"
   }
 }
+/*
